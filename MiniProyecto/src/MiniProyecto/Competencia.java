@@ -1,6 +1,6 @@
 package MiniProyecto;
 
-public class competencia {
+public class Competencia {
 
 	private String nombre;
 	private String fecha;
@@ -9,7 +9,7 @@ public class competencia {
 	
 	
 	
-	public competencia(String nombre, String fecha, String lugar, String nivel) {
+	public Competencia(String nombre, String fecha, String lugar, String nivel) {
 	
 		this.nombre = nombre;
 		this.fecha = fecha;
@@ -19,7 +19,7 @@ public class competencia {
 
 
 
-	public competencia() {
+	public Competencia() {
 		
 	}
 
