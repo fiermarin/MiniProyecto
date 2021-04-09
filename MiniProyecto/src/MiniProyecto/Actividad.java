@@ -1,6 +1,6 @@
 package MiniProyecto; 
 
-public class actividad {
+public class Actividad {
 	private String dia;
 	private String hora;
 	private String sexo;
@@ -9,7 +9,7 @@ public class actividad {
 	private int edadmin;
 	
 	// prueba
-	public actividad(String dia, String hora, String sexo, String lugar, int edadmax, int edadmin) {
+	public Actividad(String dia, String hora, String sexo, String lugar, int edadmax, int edadmin) {
 		
 		this.dia = dia;
 		this.hora = hora;
@@ -20,7 +20,7 @@ public class actividad {
 	}
 
 
-	public actividad() {
+	public Actividad() {
 		
 	}
 

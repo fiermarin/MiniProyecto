@@ -1,12 +1,12 @@
 package MiniProyecto;
 
-public class cuota {
+public class Cuota {
 	private int costo;
 	private String fecha;
 	private String comprobante;
 	
 	
-	public cuota(int costo, String fecha, String comprobante) {
+	public Cuota(int costo, String fecha, String comprobante) {
 		
 		this.costo = costo;
 		this.fecha = fecha;
@@ -14,7 +14,7 @@ public class cuota {
 	}
 
 
-	public cuota() {
+	public Cuota() {
 		
 	}
 
