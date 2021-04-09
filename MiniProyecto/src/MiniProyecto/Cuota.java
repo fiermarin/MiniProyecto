@@ -1,9 +1,11 @@
 package MiniProyecto;
+import MiniProyecto.Socio;
 
 public class Cuota {
 	private int costo;
 	private String fecha;
 	private String comprobante;
+	private Socio socio1 = null;
 	
 	public Cuota(int costo, String fecha, String comprobante) {
 		this.costo = costo;
@@ -37,4 +39,11 @@ public class Cuota {
 	public void setComprobante(String comprobante) {
 		this.comprobante = comprobante;
 	}
+
+	@Override
+	public String toString() {
+		return "Cuota costo=" + costo + ", fecha=" + fecha + ", comprobante=" + comprobante + "";
+	}
+	
+	
 }

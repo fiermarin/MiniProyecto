@@ -1,13 +1,13 @@
 package MiniProyecto;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Funcionario extends Persona{
-	private float[] horario=new float[2];
-	private String[] dias= new String[7];
+	private float[] horario = new float[2];
+	private String[] dias = new String[7];
 	private String cargo;
 
-	public Funcionario(String nombre, String apellido, int ci, int telefono, String direccion, String fechaNacimiento,
-			String carnetSalud, String sexo, float[] horario, String[] dias, String cargo) {
+	public Funcionario(String nombre, String apellido, int ci, int telefono, String direccion, String fechaNacimiento, String carnetSalud, String sexo, float[] horario, String[] dias, String cargo) {
 		super(nombre, apellido, ci, telefono, direccion, fechaNacimiento, carnetSalud, sexo);
 		this.horario = horario;
 		this.dias = dias;
@@ -77,7 +77,12 @@ public class Funcionario extends Persona{
 		horarioTrabajo[0]= new Scanner(System.in);
 		System.out.println("ingrese horario de salida");
 		horarioTrabajo[1]=new Scanner(System.in);
+	}
 
+	@Override
+	public String toString() {
+		return super.toString().concat("  horario=" + Arrays.toString(horario) + ", dias=" + Arrays.toString(dias) + ", cargo="
+				+ cargo + "");
 	}
 
 }

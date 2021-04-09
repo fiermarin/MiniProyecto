@@ -1,9 +1,19 @@
 package MiniProyecto;
 
 public class Gimnasio {
+	private String nombre;
 	private String espacio;
 
-	public Gimnasio(String espacio) {
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Gimnasio(String nombre, String espacio) {
+		this.nombre = nombre;
 		this.espacio = espacio;
 	}
 
@@ -16,5 +26,10 @@ public class Gimnasio {
 
 	public void setEspacio(String espacio) {
 		this.espacio = espacio;
+	}
+
+	@Override
+	public String toString() {
+		return "Gimnasio nombre=" + nombre + ", espacio=" + espacio + "";
 	}
 }

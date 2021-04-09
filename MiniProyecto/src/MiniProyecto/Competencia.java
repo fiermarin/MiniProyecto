@@ -48,6 +48,13 @@ public class Competencia {
 	public void setNivel(String nivel) {
 		this.nivel = nivel;
 	}
+
+	@Override
+	public String toString() {
+		return "Competencia nombre=" + nombre + ", fecha=" + fecha + ", lugar=" + lugar + ", nivel=" + nivel + "";
+	}
+	
+	
 }
 
 

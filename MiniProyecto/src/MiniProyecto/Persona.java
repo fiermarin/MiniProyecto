@@ -11,12 +11,10 @@ public class Persona {
 	private String sexo;
 
 	public Persona() {
-		//super();
 	}
 
 	public Persona(String nombre, String apellido, int ci, int telefono, String direccion, String fechaNacimiento,
 			String carnetSalud, String sexo) {
-		//super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.ci = ci;
@@ -89,5 +87,12 @@ public class Persona {
 
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona nombre=" + nombre + ", apellido=" + apellido + ", ci=" + ci + ", telefono=" + telefono
+				+ ", direccion=" + direccion + ", fechaNacimiento=" + fechaNacimiento + ", carnetSalud=" + carnetSalud
+				+ ", sexo=" + sexo + "";
 	}
 }

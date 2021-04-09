@@ -3,13 +3,13 @@ package MiniProyecto;
 public class Club {
 	private String nombre;
 	private String direccion;
-	private int	telefono;
+	private String telefono;
 	private String paginaWeb;
 
 	public Club() {
 	}
 
-	public Club(String nombre, String direccion, int telefono, String paginaWeb) {
+	public Club(String nombre, String direccion, String telefono, String paginaWeb) {
 		super();
 		this.nombre = nombre;
 		this.direccion = direccion;
@@ -33,11 +33,11 @@ public class Club {
 		this.direccion = direccion;
 	}
 
-	public int getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
 
-	public void setTelefono(int telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 
@@ -47,5 +47,11 @@ public class Club {
 
 	public void setPaginaWeb(String paginaWeb) {
 		this.paginaWeb = paginaWeb;
+	}
+
+	@Override
+	public String toString() {
+		return "" + nombre + ", direccion=" + direccion + ", telefono=" + telefono + ", pagina Web="
+				+ paginaWeb + "";
 	}
 }

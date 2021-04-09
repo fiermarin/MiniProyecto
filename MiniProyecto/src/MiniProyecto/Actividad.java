@@ -67,4 +67,10 @@ public class Actividad {
 	public void setEdadmin(int edadmin) {
 		this.edadmin = edadmin;
 	}
+
+	@Override
+	public String toString() {
+		return "Actividad dia=" + dia + ", hora=" + hora + ", sexo=" + sexo + ", lugar=" + lugar + ", edad maxima="
+				+ edadmax + ", edad minima=" + edadmin + "";
+	}
 }
