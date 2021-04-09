@@ -9,7 +9,6 @@ public class Gimnasio {
 		}
 
 		public Gimnasio() {
-			//prueba22
 		}
 
 		public String getEspacio() {
