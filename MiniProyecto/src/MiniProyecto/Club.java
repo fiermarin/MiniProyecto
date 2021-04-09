@@ -1,5 +1,5 @@
 package MiniProyecto;
 
 public class Club {
-	//Prueba a a
+	//Prueba a aaa
 }
