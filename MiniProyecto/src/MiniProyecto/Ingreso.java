@@ -1,20 +1,17 @@
 package MiniProyecto;
 
 public class Ingreso {
-
 	private int frecuencia;
 	private String fechaing;
 	private String horario;
 	
 	public Ingreso(int frecuencia, String fechaing, String horario) {
-		
 		this.frecuencia = frecuencia;
 		this.fechaing = fechaing;
 		this.horario = horario;
 	}
 
 	public Ingreso() {
-		
 	}
 
 	public int getFrecuencia() {
@@ -40,12 +37,4 @@ public class Ingreso {
 	public void setHorario(String horario) {
 		this.horario = horario;
 	}
-	
-	
-	
-	
-	
-	
 }
-
-

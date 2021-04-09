@@ -5,14 +5,14 @@ public class Socio extends Persona {
 	private int desca;
 	private int descc;
 	private int descf;
-	
+
 	public Socio(String nombre, String apellido, int ci, int tel, String direccion, String fechanac, String canetsal,
 			String sexo, int desca,int descc,int descf) {
-		//super(nombre, apellido, ci, tel, direccion, fechanac, canetsal, sexo);
+		super(nombre, apellido, ci, tel, direccion, fechanac, canetsal, sexo);
 		this.desca = desca;
 		this.descc = descc;
 		this.descf = descf;
-	
+
 	}
 
 	public int getDesca() {

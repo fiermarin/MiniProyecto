@@ -7,16 +7,16 @@ public class Persona {
 	private int telefono;
 	private String direccion;
 	private String fechaNacimiento;
-	private boolean carnetSalud;
+	private String carnetSalud;
 	private String sexo;
-	
+
 	public Persona() {
-		super();
+		//super();
 	}
 
 	public Persona(String nombre, String apellido, int ci, int telefono, String direccion, String fechaNacimiento,
-			boolean carnetSalud, String sexo) {
-		super();
+			String carnetSalud, String sexo) {
+		//super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.ci = ci;
@@ -75,11 +75,11 @@ public class Persona {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
-	public boolean isCarnetSalud() {
+	public String getCarnetSalud() {
 		return carnetSalud;
 	}
 
-	public void setCarnetSalud(boolean carnetSalud) {
+	public void setCarnetSalud(String carnetSalud) {
 		this.carnetSalud = carnetSalud;
 	}
 

@@ -6,7 +6,6 @@ public class Club {
 	private int	telefono;
 	private String paginaWeb;
 
-	
 	public Club() {
 	}
 

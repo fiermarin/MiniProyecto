@@ -5,18 +5,14 @@ public class Funcionario extends Persona{
 	private float[] horario=new float[2];
 	private String[] dias= new String[7];
 	private String cargo;
-	
-	
+
 	public Funcionario(String nombre, String apellido, int ci, int telefono, String direccion, String fechaNacimiento,
-			boolean carnetSalud, String sexo, float[] horario, String[] dias, String cargo) {
+			String carnetSalud, String sexo, float[] horario, String[] dias, String cargo) {
 		super(nombre, apellido, ci, telefono, direccion, fechaNacimiento, carnetSalud, sexo);
-	
 		this.horario = horario;
 		this.dias = dias;
 		this.cargo = cargo;
-		}
-		
-	
+	}
 
 	public float[] getHorario() {
 		return horario;
@@ -39,7 +35,7 @@ public class Funcionario extends Persona{
 	}
 
 	public void setCargo(String cargo) {
-		cargo = cargo;
+		this.cargo = cargo;
 	}
 
 	public boolean incentivo(String[] dias,float[] horario) {
@@ -57,14 +53,15 @@ public class Funcionario extends Persona{
 				cantidadDias++;
 			}
 		}
-			if (cantidadDias>4&&horarioCompleto>8) {
-				incentivo=true;
-				}
-			else {
-				incentivo=false;				
-			}
-			return incentivo;
+		if (cantidadDias>4&&horarioCompleto>8) {
+			incentivo=true;
 		}
+		else {
+			incentivo=false;				
+		}
+		return incentivo;
+	}
+
 	public void trabajar() {
 		Scanner[]diasTrabajo=new Scanner[7];
 		System.out.println("Ingrese los dias de trabajo");
