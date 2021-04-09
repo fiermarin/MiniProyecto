@@ -1,4 +1,4 @@
-package MiniProyecto;
+package MiniProyecto; 
 
 public class actividad {
 	private String dia;
@@ -8,7 +8,7 @@ public class actividad {
 	private int edadmax;
 	private int edadmin;
 	
-	
+	// prueba
 	public actividad(String dia, String hora, String sexo, String lugar, int edadmax, int edadmin) {
 		
 		this.dia = dia;
