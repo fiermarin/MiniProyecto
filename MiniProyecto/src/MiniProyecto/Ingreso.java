@@ -1,9 +1,11 @@
 package MiniProyecto;
+import MiniProyecto.Socio;
 
 public class Ingreso {
 	private int frecuencia;
 	private String fechaing;
 	private String horario;
+	private Persona persona1 = null;
 	
 	public Ingreso(int frecuencia, String fechaing, String horario) {
 		this.frecuencia = frecuencia;

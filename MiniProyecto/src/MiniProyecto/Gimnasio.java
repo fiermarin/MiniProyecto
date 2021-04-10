@@ -1,9 +1,12 @@
 package MiniProyecto;
+import MiniProyecto.Socio;
 
 public class Gimnasio {
 	private String nombre;
 	private String espacio;
-
+    private Actividad actividad1 = null;
+    private Club club1 = null;
+    
 	public String getNombre() {
 		return nombre;
 	}

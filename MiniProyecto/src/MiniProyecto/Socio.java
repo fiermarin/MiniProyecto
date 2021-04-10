@@ -1,11 +1,13 @@
 package MiniProyecto;
+import MiniProyecto.Socio;
 
 public class Socio extends Persona {
 
 	private int descAntiguedad;
 	private int descCompetencia;
 	private int descFuncionario;
-
+    
+    
 	public Socio(String nombre, String apellido, int ci, int tel, String direccion, String fechanac, String canetsal, String sexo, int descAntiguedad,int descCompetencia,int descFuncionario) {
 		super(nombre, apellido, ci, tel, direccion, fechanac, canetsal, sexo);
 		this.descAntiguedad = descAntiguedad;

@@ -1,4 +1,5 @@
 package MiniProyecto;
+import MiniProyecto.Socio;
 
 public class Persona {
 	private String nombre;
@@ -9,7 +10,8 @@ public class Persona {
 	private String fechaNacimiento;
 	private String carnetSalud;
 	private String sexo;
-
+    private Club club1 = null;
+    
 	public Persona() {
 	}
 

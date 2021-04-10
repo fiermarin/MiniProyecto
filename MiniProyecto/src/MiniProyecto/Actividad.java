@@ -1,4 +1,5 @@
 package MiniProyecto; 
+import MiniProyecto.Socio;
 
 public class Actividad {
 	private String dia;
@@ -7,6 +8,7 @@ public class Actividad {
 	private String lugar;
 	private int edadmax;
 	private int edadmin;
+	
 	
 	public Actividad(String dia, String hora, String sexo, String lugar, int edadmax, int edadmin) {
 		this.dia = dia;
