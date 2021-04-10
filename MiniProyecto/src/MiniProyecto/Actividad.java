@@ -8,6 +8,8 @@ public class Actividad {
 	private String lugar;
 	private int edadmax;
 	private int edadmin;
+	private Socio socio1 = null;
+	private Competencia competencia2 = null;
 	
 	
 	public Actividad(String dia, String hora, String sexo, String lugar, int edadmax, int edadmin) {

@@ -1,10 +1,13 @@
 package MiniProyecto;
+import MiniProyecto.Socio;
 
 public class Competencia {
 	private String nombre;
 	private String fecha;
 	private String lugar;
 	private String nivel;
+	private Socio socio2 = null;
+	private Actividad actividad2 = null;
 	
 	public Competencia(String nombre, String fecha, String lugar, String nivel) {
 		this.nombre = nombre;

@@ -6,6 +6,8 @@ public class Socio extends Persona {
 	private int descAntiguedad;
 	private int descCompetencia;
 	private int descFuncionario;
+    private Actividad actividad1 = null;
+    private Competencia competencia1 = null;
     
     
 	public Socio(String nombre, String apellido, int ci, int tel, String direccion, String fechanac, String canetsal, String sexo, int descAntiguedad,int descCompetencia,int descFuncionario) {
